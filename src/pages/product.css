@@ -7,7 +7,7 @@
     padding: 5px;
     border-radius: 4px;
 }
-img {
-    width: 200px;
-    height: 300px;
+.product img {
+    width: 180px;
+    height: 280px;
 }
