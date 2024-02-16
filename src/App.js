@@ -7,17 +7,26 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import Home from "./pages/home";
 import About from "./pages/about.jsx";
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+
 
 function App() {
   return (
+    <BrowserRouter>
     <div className="App">
       <Navbar></Navbar>
-      <Home></Home>
-      <About></About>
-      <Catalog></Catalog>
+      <Routes>
+        <Route path='/' element={ <Home/>}/>
+        <Route path='/about' element={ <About/>}/>
+        <Route path='/catalog' element={ <Catalog/>}/>
+      </Routes>
+      
       <Footer></Footer>
     </div>
+    </BrowserRouter>
   );
 }
-
+// <Home></Home> 
+      // <About></About>
+      // <Catalog></Catalog>
 export default App;
