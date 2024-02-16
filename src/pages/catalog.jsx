@@ -20,7 +20,7 @@ function Catalog(){
         setProducts(products);console.log(products);
     };
     return (
-        <div>
+        <div className="catalog">
         <h1>Here look at my {productState.length} cool products</h1>
         {productState.map((productData, index) => <Product key={index} data={productData} />)}
 
