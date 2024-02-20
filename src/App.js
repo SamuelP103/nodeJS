@@ -8,7 +8,7 @@ import "bootstrap/dist/js/bootstrap.min.js";
 import Home from "./pages/home";
 import About from "./pages/about.jsx";
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-
+import Admin from "./admin.jsx";
 
 function App() {
   return (
@@ -19,6 +19,7 @@ function App() {
         <Route path='/' element={ <Home/>}/>
         <Route path='/about' element={ <About/>}/>
         <Route path='/catalog' element={ <Catalog/>}/>
+        <Route path='/admin' element={ <Admin/>}/>
       </Routes>
       
       <Footer></Footer>
